@@ -134,6 +134,9 @@ if __name__ == '__main__':
             objects_pred = predictions_to_kitti_format(img_detections, calib, img_rgb.shape, configs.img_size)
             img_rgb = show_image_with_boxes(img_rgb, objects_pred, calib, False)
 
+            print("isinya object pred: \n")
+            print(object_pred)
+
             img_bev = cv2.flip(cv2.flip(img_bev, 0), 1)
 
             out_img = merge_rgb_to_bev(img_rgb, img_bev, output_width=608)
