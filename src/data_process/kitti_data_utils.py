@@ -86,6 +86,9 @@ class Object3d(object):
                     % (self.type, self.truncation, int(self.occlusion), self.alpha, self.box2d[0], self.box2d[1],
                        self.box2d[2], self.box2d[3], self.h, self.w, self.l, self.t[0], self.t[1], self.t[2],
                        self.ry, self.score)
+        print("Kitti String: ")
+        print(kitti_str)
+        print()
         return kitti_str
 
 
